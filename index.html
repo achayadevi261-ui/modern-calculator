@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+
+        <section class="calculator">
+
+            <header class="top">
+                <div>
+                    <h1>Calculator</h1>
+                    <p>Simple. Smart. Precise.</p>
+                </div>
+                <div class="logo">✦</div>
+            </header>
+
+            <div class="display">
+                <div id="previousDisplay"></div>
+                <div id="currentDisplay">0</div>
+            </div>
+
+            <div class="buttons">
+
+                <button class="special" data-action="clear">AC</button>
+                <button class="special" data-action="delete">DEL</button>
+                <button class="special" data-action="percent">%</button>
+                <button class="operator" data-operator="/">÷</button>
+
+                <button data-number="7">7</button>
+                <button data-number="8">8</button>
+                <button data-number="9">9</button>
+                <button class="operator" data-operator="*">×</button>
+
+                <button data-number="4">4</button>
+                <button data-number="5">5</button>
+                <button data-number="6">6</button>
+                <button class="operator" data-operator="-">−</button>
+
+                <button data-number="1">1</button>
+                <button data-number="2">2</button>
+                <button data-number="3">3</button>
+                <button class="operator" data-operator="+">+</button>
+
+                <button class="special" data-action="sign">+/−</button>
+                <button data-number="0">0</button>
+                <button data-number=".">.</button>
+                <button class="equals" data-action="equals">=</button>
+
+            </div>
+
+            <footer>
+                <span>Designed for everyday calculations</span>
+            </footer>
+
+        </section>
+
+        <section class="history-panel">
+
+            <div class="history-header">
+                <h2>History</h2>
+                <button id="clearHistory">Clear</button>
+            </div>
+
+            <div id="historyList">
+                <p class="empty-history">Your calculations will appear here.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
